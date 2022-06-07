@@ -61,7 +61,6 @@ def isUserExists(full_name):
 def isKeyExists(key):
     cursor, con = work()
     try:
-        print(full_name)
         sql = f'SELECT * FROM codes WHERE key_code = {key}'
         cursor.execute(sql)
 
